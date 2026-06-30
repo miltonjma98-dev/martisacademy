@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martis Academy - Contacto y Soporte</title>
+    
+    <!-- Meta SEO -->
+    <meta name="description" content="Ponte en contacto con Martis Academy. Solicita información de nuestros cursos preuniversitarios y nivelación de cálculo y física en Quito y Ecuador.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- NAV BAR -->
+    <header class="main-header" id="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="IMAGENES/logo.png" alt="Martis Academy Logo" class="header-logo-img">
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="cursos.html" class="nav-link">Nuestros Cursos</a></li>
+                    <li><a href="cronograma.html" class="nav-link">Cronograma</a></li>
+                    <li><a href="institutos.html" class="nav-link">Institutos</a></li>
+                    <li><a href="simulador.html" class="nav-link">Simulador</a></li>
+                    <li><a href="planes.html" class="nav-link">Planes</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="contacto.html" class="btn btn-primary btn-header">Inscríbete Ya</a>
+                <a href="https://martisacademy.milaulas.com/" target="_blank" rel="noopener" class="btn btn-outline btn-header"><i data-lucide="external-link"></i> Aula Virtual</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menú">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top: 5rem;">
+        
+        <!-- CONTACT SECTION -->
+        <section class="contact-section" id="contacto">
+            <div class="container contact-container">
+                
+                <div class="contact-info-column">
+                    <span class="section-tag color-blue">Hablemos hoy</span>
+                    <h2 class="section-title">¿Listo para Empezar tu Futuro?</h2>
+                    <p class="contact-desc">
+                        Déjanos tus datos y un asesor educativo se pondrá en contacto contigo en menos de 24 horas para guiarte en tu proceso de admisión o nivelación.
+                    </p>
+
+                    <div class="contact-methods">
+                        <div class="method-item">
+                            <div class="method-icon"><i data-lucide="phone"></i></div>
+                            <div>
+                                <h4>Llámanos / WhatsApp</h4>
+                                <p><a href="https://wa.me/593900000000" target="_blank" rel="noopener">+593 98 765 4321</a></p>
+                            </div>
+                        </div>
+                        <div class="method-item">
+                            <div class="method-icon"><i data-lucide="mail"></i></div>
+                            <div>
+                                <h4>Correo Electrónico</h4>
+                                <p><a href="mailto:info@martisacademy.com">info@martisacademy.com</a></p>
+                            </div>
+                        </div>
+                        <div class="method-item">
+                            <div class="method-icon"><i data-lucide="map-pin"></i></div>
+                            <div>
+                                <h4>Sede Central</h4>
+                                <p>Av. Amazonas y Veintimilla, Edificio Robles, Of. 302. Quito, Ecuador</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="trust-box">
+                        <p>Plataforma certificada. Tus datos están 100% seguros con nosotros.</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-column">
+                    <div class="form-wrapper">
+                        <h3>Solicitar Información Gratis</h3>
+                        
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="form-name">Nombre Completo</label>
+                                <input type="text" id="form-name" required placeholder="Ej: Carlos Pérez" aria-required="true">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Correo Electrónico</label>
+                                <input type="email" id="form-email" required placeholder="Ej: carlos@ejemplo.com" aria-required="true">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-phone">Número de Celular</label>
+                                <input type="tel" id="form-phone" required placeholder="Ej: 0987654321" aria-required="true">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-program">Programa de Interés</label>
+                                <select id="form-program">
+                                    <option value="preu-ingenierias">Preuniversitario - Ingenierías y Ciencias</option>
+                                    <option value="preu-medicina">Preuniversitario - Medicina y Salud</option>
+                                    <option value="preu-razonamientos">Preuniversitario - Razonamientos Básicos</option>
+                                    <option value="niv-calculo">Nivelación - Cálculo y Matemáticas</option>
+                                    <option value="niv-fisica">Nivelación - Física y Estructuras</option>
+                                    <option value="ist-admision">Información de Institutos Tecnológicos</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-msg">Mensaje Opcional</label>
+                                <textarea id="form-msg" rows="3" placeholder="Cuéntanos cuál es tu universidad o materia objetivo..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block btn-lg" id="submit-form-btn">Enviar Solicitud <i data-lucide="send"></i></button>
+                        </form>
+
+                        <div class="form-success-message hidden" id="form-success-box">
+                            <i data-lucide="check-circle2" class="success-icon"></i>
+                            <h4>¡Mensaje Enviado con Éxito!</h4>
+                            <p>Gracias por escribirnos. Un asesor se comunicará contigo por WhatsApp para facilitarte los detalles y accesos.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FAQ ACCORDION -->
+        <section class="faq-section" style="background-color: var(--bg-light); border-top: 1px solid #e2e8f0;">
+            <div class="container">
+                
+                <div class="section-header text-center">
+                    <span class="section-tag">Preguntas Frecuentes</span>
+                    <h2 class="section-title">Resuelve tus Dudas</h2>
+                    <p class="section-subtitle">¿Tienes preguntas sobre el proceso? Aquí te respondemos las más comunes.</p>
+                </div>
+
+                <div class="faq-accordion-container">
+                    
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>¿Las clases son virtuales o presenciales?</span>
+                            <i data-lucide="chevron-down" class="faq-icon"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>Ofrecemos modalidad virtual interactiva (con clases 100% en vivo) y también esquemas híbridos en ciudades principales. Las clases quedan grabadas en nuestra plataforma para que las repases cuantas veces necesites.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>¿Qué ocurre si no apruebo el examen de admisión?</span>
+                            <i data-lucide="chevron-down" class="faq-icon"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>Contamos con una "Garantía de Ingreso". Si asistes a más del 90% de nuestras clases, realizas todos los simuladores y por algún motivo no obtienes el cupo, puedes volver a tomar el curso preuniversitario del siguiente ciclo completamente gratis.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>¿Cómo me ayudan los cursos de nivelación de carrera?</span>
+                            <i data-lucide="chevron-down" class="faq-icon"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>Los profesores universitarios asumen que ya conoces muchos conceptos de cálculo y física, y avanzan muy rápido. En Martis Academy te explicamos desde cero con ejemplos prácticos y te preparamos específicamente para los talleres y exámenes difíciles de tu propia universidad.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>¿El ingreso a los Institutos Tecnológicos es gratuito?</span>
+                            <i data-lucide="chevron-down" class="faq-icon"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>Sí, la educación tecnológica pública en Ecuador es totalmente gratuita. Al igual que las universidades públicas, debes realizar obligatoriamente el Registro Nacional de la SENESCYT y rendir la respectiva evaluación para adjudicarte un cupo.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            
+            <div class="footer-brand-col">
+                <a href="index.html" class="footer-logo">
+                    <img src="IMAGENES/logo.png" alt="Martis Academy Logo" class="footer-logo-img">
+                </a>
+                <p class="footer-about">
+                    Academia líder en pre-admisión universitaria y nivelación de carreras científicas y tecnológicas en Ecuador.
+                </p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Youtube"><i data-lucide="youtube"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="cursos.html">Nuestros Cursos</a></li>
+                    <li><a href="cronograma.html">Cronograma de Admisión</a></li>
+                    <li><a href="institutos.html">Institutos Públicos</a></li>
+                    <li><a href="simulador.html">Simulador Gratis</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Recursos Útiles</h4>
+                <ul>
+                    <li><a href="https://www.registrounicoedusup.gob.ec/" target="_blank" rel="noopener">Registro Único SENESCYT <i data-lucide="external-link" class="link-icon"></i></a></li>
+                    <li><a href="galeria.html" target="_blank" rel="noopener">Cronograma de Admisión (Galería) <i data-lucide="external-link" class="link-icon"></i></a></li>
+                    <li><a href="https://www.ces.gob.ec/" target="_blank" rel="noopener">Oferta Académica CES <i data-lucide="external-link" class="link-icon"></i></a></li>
+                    <li><a href="contacto.html">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact-col">
+                <h4>Contacto Ecu</h4>
+                <p><i data-lucide="map-pin"></i> Av. Amazonas, Quito, Ecuador</p>
+                <p><i data-lucide="phone"></i> +593 98 765 4321</p>
+                <p><i data-lucide="mail"></i> info@martisacademy.com</p>
+            </div>
+
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container bottom-container">
+                <p>&copy; 2026 Martis Academy. Todos los derechos reservados. Diseñado con teoría de color y alta interactividad.</p>
+                <div class="bottom-links">
+                    <a href="index.html">Términos de Servicio</a>
+                    <a href="index.html">Políticas de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Code -->
+    <script src="app.js"></script>
+</body>
+</html>

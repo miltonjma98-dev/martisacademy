@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martis Academy - Galería de Admisión</title>
+    
+    <!-- Meta SEO -->
+    <meta name="description" content="Galería ilustrativa de todas las universidades e institutos públicos de Ecuador. Accede a los perfiles oficiales y logos de admisión de Martis Academy.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- NAV BAR -->
+    <header class="main-header" id="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="IMAGENES/logo.png" alt="Martis Academy Logo" class="header-logo-img">
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="cursos.html" class="nav-link">Nuestros Cursos</a></li>
+                    <li><a href="cronograma.html" class="nav-link">Cronograma</a></li>
+                    <li><a href="institutos.html" class="nav-link">Institutos</a></li>
+                    <li><a href="simulador.html" class="nav-link">Simulador</a></li>
+                    <li><a href="planes.html" class="nav-link">Planes</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="contacto.html" class="btn btn-primary btn-header">Inscríbete Ya</a>
+                <a href="https://martisacademy.milaulas.com/" target="_blank" rel="noopener" class="btn btn-outline btn-header"><i data-lucide="external-link"></i> Aula Virtual</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menú">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top: 5rem;">
+        
+        <!-- GALLERY SECTION -->
+        <section class="gallery-section">
+            <div class="container">
+                
+                <div class="section-header text-center">
+                    <span class="section-tag color-blue">Galería de Instituciones</span>
+                    <h2 class="section-title">Universidades e Institutos Públicos del Ecuador</h2>
+                    <p class="section-subtitle">Visualiza de forma ordenada todas las opciones de educación superior del país.</p>
+                </div>
+
+                <!-- Universities Section -->
+                <div class="gallery-block" style="margin-bottom: 4rem;">
+                    <h3 style="font-size: 1.6rem; border-bottom: 2px solid var(--primary-blue); padding-bottom: 0.5rem; margin-bottom: 1.5rem; color: var(--primary-blue);">
+                        <i data-lucide="graduation-cap" style="vertical-align: middle;"></i> Universidades y Escuelas Politécnicas
+                    </h3>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Total: 33 instituciones públicas con proceso autónomo o asistido.</p>
+                    <div class="gallery-grid" id="uni-gallery-grid">
+                        <!-- Rendered dynamically by app.js -->
+                    </div>
+                </div>
+
+                <!-- Institutes Section -->
+                <div class="gallery-block">
+                    <h3 style="font-size: 1.6rem; border-bottom: 2px solid var(--primary-teal); padding-bottom: 0.5rem; margin-bottom: 1.5rem; color: var(--primary-teal);">
+                        <i data-lucide="school" style="vertical-align: middle;"></i> Institutos Superiores Tecnológicos y Conservatorios
+                    </h3>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Total: 54 instituciones públicas de carreras cortas y de alta inserción laboral.</p>
+                    <div class="gallery-grid" id="inst-gallery-grid">
+                        <!-- Rendered dynamically by app.js -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            
+            <div class="footer-brand-col">
+                <a href="index.html" class="footer-logo">
+                    <img src="IMAGENES/logo.png" alt="Martis Academy Logo" class="footer-logo-img">
+                </a>
+                <p class="footer-about">
+                    Academia líder en pre-admisión universitaria y nivelación de carreras científicas y tecnológicas en Ecuador.
+                </p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Youtube"><i data-lucide="youtube"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="cursos.html">Nuestros Cursos</a></li>
+                    <li><a href="cronograma.html">Cronograma de Admisión</a></li>
+                    <li><a href="institutos.html">Institutos Públicos</a></li>
+                    <li><a href="simulador.html">Simulador Gratis</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Recursos Útiles</h4>
+                <ul>
+                    <li><a href="https://www.registrounicoedusup.gob.ec/" target="_blank" rel="noopener">Registro Único SENESCYT <i data-lucide="external-link" class="link-icon"></i></a></li>
+                    <li><a href="galeria.html" target="_blank" rel="noopener">Cronograma de Admisión (Galería) <i data-lucide="external-link" class="link-icon"></i></a></li>
+                    <li><a href="https://www.ces.gob.ec/" target="_blank" rel="noopener">Oferta Académica CES <i data-lucide="external-link" class="link-icon"></i></a></li>
+                    <li><a href="contacto.html">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact-col">
+                <h4>Contacto Ecu</h4>
+                <p><i data-lucide="map-pin"></i> Av. Amazonas, Quito, Ecuador</p>
+                <p><i data-lucide="phone"></i> +593 98 765 4321</p>
+                <p><i data-lucide="mail"></i> info@martisacademy.com</p>
+            </div>
+
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container bottom-container">
+                <p>&copy; 2026 Martis Academy. Todos los derechos reservados. Diseñado con teoría de color y alta interactividad.</p>
+                <div class="bottom-links">
+                    <a href="index.html">Términos de Servicio</a>
+                    <a href="index.html">Políticas de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Code -->
+    <script src="app.js"></script>
+</body>
+</html>

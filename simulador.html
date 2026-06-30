@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martis Academy - Simulador de Admisión</title>
+    
+    <!-- Meta SEO -->
+    <meta name="description" content="Mini-simulador interactivo de admisión universitaria de Martis Academy. Mide tu nivel en razonamiento lógico, física, matemáticas y verbal gratis.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- NAV BAR -->
+    <header class="main-header" id="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="IMAGENES/logo.png" alt="Martis Academy Logo" class="header-logo-img">
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="cursos.html" class="nav-link">Nuestros Cursos</a></li>
+                    <li><a href="cronograma.html" class="nav-link">Cronograma</a></li>
+                    <li><a href="institutos.html" class="nav-link">Institutos</a></li>
+                    <li><a href="simulador.html" class="nav-link">Simulador</a></li>
+                    <li><a href="planes.html" class="nav-link">Planes</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="contacto.html" class="btn btn-primary btn-header">Inscríbete Ya</a>
+                <a href="https://martisacademy.milaulas.com/" target="_blank" rel="noopener" class="btn btn-outline btn-header"><i data-lucide="external-link"></i> Aula Virtual</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menú">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top: 5rem;">
+        
+        <!-- MINI-SIMULADOR INTERACTIVO -->
+        <section class="simulator-section" id="simulador">
+            <div class="container">
+                <div class="simulator-layout">
+                    
+                    <div class="sim-info">
+                        <span class="section-tag color-orange">Prueba tu Nivel</span>
+                        <h2 class="section-title">Mini-Simulador de Admisión Gratuito</h2>
+                        <p>
+                            Familiarízate con el tipo de preguntas que enfrentarás en el examen real. Este mini test contiene 5 reactivos seleccionados de Razonamiento Lógico, Matemáticas, Física y Verbal.
+                        </p>
+                        <ul class="sim-benefits">
+                            <li><i data-lucide="check-circle2"></i> Retroalimentación inmediata con explicación paso a paso.</li>
+                            <li><i data-lucide="check-circle2"></i> Medición de tiempo real.</li>
+                            <li><i data-lucide="check-circle2"></i> Diagnóstico de desempeño al finalizar.</li>
+                        </ul>
+                        
+                        <!-- Moodle Campus Access Promo Box -->
+                        <div class="sim-cta-box" style="margin-top: 2rem; border-left: 4px solid var(--primary-blue);">
+                            <h4 style="font-size: 1.1rem; color: var(--primary-blue); margin-bottom: 0.5rem;"><i data-lucide="laptop" style="vertical-align: middle;"></i> ¿Quieres simuladores completos e ilimitados?</h4>
+                            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
+                                Regístrate en nuestra aula virtual Moodle para rendir simulacros completos de 80 preguntas con reportes de notas oficiales y tiempos reales de examen.
+                            </p>
+                            <a href="https://martisacademy.milaulas.com/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Acceder a Simuladores en Moodle</a>
+                        </div>
+                    </div>
+
+                    <!-- Simulated Quiz Card -->
+                    <div class="sim-card" id="simulator-card">
+                        
+                        <!-- Quiz Start View -->
+                        <div class="quiz-view" id="quiz-start-view">
+                            <div class="quiz-icon-header">
+                                <i data-lucide="hourglass"></i>
+                            </div>
+                            <h3>¿Listo para empezar el test?</h3>
+                            <p>El examen iniciará un temporizador simulado. No hay límite estricto de tiempo para que puedas leer detenidamente.</p>
+                            <button class="btn btn-primary btn-lg btn-block" id="start-quiz-btn">Comenzar Mini Test</button>
+                        </div>
+
+                        <!-- Quiz Question View (Hidden Initially) -->
+                        <div class="quiz-view hidden" id="quiz-question-view">
+                            <div class="quiz-header">
+                                <span class="quiz-progress" id="quiz-progress">Pregunta 1 de 5</span>
+                                <span class="quiz-timer" id="quiz-timer"><i data-lucide="timer"></i> 00:00</span>
+                            </div>
+                            
+                            <div class="quiz-question-container">
+                                <h4 class="quiz-question-text" id="question-text">Aquí va la pregunta</h4>
+                                
+                                <div class="quiz-options" id="quiz-options-container">
+                                    <!-- Options populated dynamically by JS -->
+                                </div>
+                            </div>
+
+                            <div class="quiz-feedback hidden" id="quiz-feedback-box">
+                                <h5 id="feedback-title">¡Respuesta Correcta!</h5>
+                                <p id="feedback-text">Explicación de la resolución del ejercicio.</p>
+                            </div>
+
+                            <div class="quiz-footer-actions">
+                                <button class="btn btn-outline" id="next-question-btn" disabled>Siguiente Pregunta <i data-lucide="arrow-right"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Quiz Result View (Hidden Initially) -->
+                        <div class="quiz-view hidden" id="quiz-result-view">
+                            <div class="quiz-result-header">
+                                <div class="result-circle">
+                                    <span class="result-score" id="result-score">4/5</span>
+                                </div>
+                                <h3>¡Examen Finalizado!</h3>
+                                <p id="result-message">¡Excelente trabajo! Tienes bases sólidas, pero con Martis Academy asegurarás el puntaje perfecto.</p>
+                            </div>
+                            
+                            <div class="result-details">
+                                <div class="res-item">
+                                    <span class="res-label">Tiempo Total:</span>
+                                    <span class="res-val" id="result-time">1m 45s</span>
+                                </div>
+                                <div class="res-item">
+                                    <span class="res-label">Efectividad:</span>
+                                    <span class="res-val" id="result-percent">80%</span>
+                                </div>
+                            </div>
+
+                            <div class="quiz-result-cta">
+                                <a href="https://martisacademy.milaulas.com/" target="_blank" rel="noopener" class="btn btn-primary" id="moodle-simulator-btn">Simuladores Completos Moodle <i data-lucide="external-link"></i></a>
+                                <button class="btn btn-outline" id="restart-quiz-btn">Volver a Intentar</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            
+            <div class="footer-brand-col">
+                <a href="index.html" class="footer-logo">
+                    <img src="IMAGENES/logo.png" alt="Martis Academy Logo" class="footer-logo-img">
+                </a>
+                <p class="footer-about">
+                    Academia líder en pre-admisión universitaria y nivelación de carreras científicas y tecnológicas en Ecuador.
+                </p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Youtube"><i data-lucide="youtube"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="cursos.html">Nuestros Cursos</a></li>
+                    <li><a href="cronograma.html">Cronograma de Admisión</a></li>
+                    <li><a href="institutos.html">Institutos Públicos</a></li>
+                    <li><a href="simulador.html">Simulador Gratis</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Recursos Útiles</h4>
+                <ul>
+                    <li><a href="https://www.registrounicoedusup.gob.ec/" target="_blank" rel="noopener">Registro Único SENESCYT <i data-lucide="external-link" class="link-icon"></i></a></li>
+                    <li><a href="galeria.html" target="_blank" rel="noopener">Cronograma de Admisión (Galería) <i data-lucide="external-link" class="link-icon"></i></a></li>
+                    <li><a href="https://www.ces.gob.ec/" target="_blank" rel="noopener">Oferta Académica CES <i data-lucide="external-link" class="link-icon"></i></a></li>
+                    <li><a href="contacto.html">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact-col">
+                <h4>Contacto Ecu</h4>
+                <p><i data-lucide="map-pin"></i> Av. Amazonas, Quito, Ecuador</p>
+                <p><i data-lucide="phone"></i> +593 98 765 4321</p>
+                <p><i data-lucide="mail"></i> info@martisacademy.com</p>
+            </div>
+
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container bottom-container">
+                <p>&copy; 2026 Martis Academy. Todos los derechos reservados. Diseñado con teoría de color y alta interactividad.</p>
+                <div class="bottom-links">
+                    <a href="index.html">Términos de Servicio</a>
+                    <a href="index.html">Políticas de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Code -->
+    <script src="app.js"></script>
+</body>
+</html>

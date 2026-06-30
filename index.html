@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martis Academy - Inicio</title>
+    
+    <!-- Meta SEO -->
+    <meta name="description" content="Prepárate para ingresar a la universidad y dominar tus materias académicas. Cursos de ingreso a la U, nivelación para ingeniería, medicina y más en Ecuador.">
+    <meta name="keywords" content="preuniversitario, ingreso a la universidad, nivelación universitaria, calculo, fisica, quimica, senescyt, institutos tecnologicos, ecuador, martis academy">
+    <meta name="author" content="Martis Academy">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Martis Academy - Tu Entrada a la U y Éxito en tu Carrera">
+    <meta property="og:description" content="Capacitación de alto nivel para el ingreso a la universidad y nivelación académica en carreras técnicas y científicas. ¡Asegura tu cupo!">
+    <meta property="og:image" content="IMAGENES/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- NAV BAR -->
+    <header class="main-header" id="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="IMAGENES/logo.png" alt="Martis Academy Logo" class="header-logo-img">
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="cursos.html" class="nav-link">Nuestros Cursos</a></li>
+                    <li><a href="cronograma.html" class="nav-link">Cronograma</a></li>
+                    <li><a href="institutos.html" class="nav-link">Institutos</a></li>
+                    <li><a href="simulador.html" class="nav-link">Simulador</a></li>
+                    <li><a href="planes.html" class="nav-link">Planes</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="contacto.html" class="btn btn-primary btn-header">Inscríbete Ya</a>
+                <a href="https://martisacademy.milaulas.com/" target="_blank" rel="noopener" class="btn btn-outline btn-header"><i data-lucide="external-link"></i> Aula Virtual</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menú">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="inicio">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-tagline"><i data-lucide="sparkles"></i> Prepárate para destacar</span>
+                    <h1 class="hero-title">Asegura tu Ingreso a la Universidad y el Éxito en tu Carrera</h1>
+                    <p class="hero-description">
+                        En <strong>Martis Academy</strong> te preparamos para los exámenes de admisión más exigentes de las universidades e institutos del país, y te acompañamos en tu vida universitaria para que domines las materias más complejas de tu carrera.
+                    </p>
+                    <div class="hero-cta-group">
+                        <a href="cursos.html" class="btn btn-primary btn-lg">Explorar Cursos</a>
+                        <a href="simulador.html" class="btn btn-outline btn-lg"><i data-lucide="play-circle"></i> Probar Simulador</a>
+                    </div>
+                    
+                    <!-- Stats Grid -->
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <span class="stat-num">96%</span>
+                            <span class="stat-text">Tasa de Ingreso</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">+1.2k</span>
+                            <span class="stat-text">Estudiantes Nivelados</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">+15</span>
+                            <span class="stat-text">Años de Experiencia</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="visual-wrapper">
+                        <!-- Usando portada.png provisto en la carpeta IMAGENES -->
+                        <img src="IMAGENES/portada.png" alt="Estudiantes en Martis Academy" class="hero-image">
+                        <div class="floating-badge badge-1">
+                            <i data-lucide="award"></i>
+                            <div>
+                                <h4>Puntaje Perfecto</h4>
+                                <p>Admisiones 2025</p>
+                            </div>
+                        </div>
+                        <div class="floating-badge badge-2">
+                            <i data-lucide="check-circle2"></i>
+                            <div>
+                                <h4>985/1000 Pts</h4>
+                                <p>Promedio Prometedor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUICK INTRO COURSES -->
+        <section class="intro-courses" style="background-color: var(--bg-white);">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag color-blue">Nuestros Servicios</span>
+                    <h2 class="section-title">¿Cómo te ayudamos a crecer?</h2>
+                    <p class="section-subtitle">Dos rutas académicas diseñadas para tu éxito preuniversitario y universitario.</p>
+                </div>
+                
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-icon-wrapper color-blue">
+                            <i data-lucide="graduation-cap"></i>
+                        </div>
+                        <h3>Ingreso a la Universidad</h3>
+                        <p>Preparación intensiva para el examen de admisión de todas las universidades públicas y los institutos superiores del Ecuador.</p>
+                        <a href="cursos.html" class="btn btn-text">Ver temarios <i data-lucide="arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="course-card featured">
+                        <div class="featured-badge">Éxito Académico</div>
+                        <div class="course-icon-wrapper color-teal">
+                            <i data-lucide="book-open"></i>
+                        </div>
+                        <h3>Nivelación de Carreras</h3>
+                        <p>Te enseñamos cálculo, física, álgebra lineal y química para que apruebes con excelentes notas tus primeros semestres universitarios.</p>
+                        <a href="cursos.html" class="btn btn-primary btn-sm">Saber Más</a>
+                    </div>
+                    
+                    <div class="course-card">
+                        <div class="course-icon-wrapper color-orange">
+                            <i data-lucide="laptop"></i>
+                        </div>
+                        <h3>Simuladores en Moodle</h3>
+                        <p>Simuladores completos basados en reactivos oficiales de años anteriores cronometrados para medir tu velocidad.</p>
+                        <a href="simulador.html" class="btn btn-text">Probar gratis <i data-lucide="arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MOODLE / CAMPUS VIRTUAL BANNER -->
+        <section class="moodle-banner-section" style="background-color: var(--bg-light);">
+            <div class="container">
+                <div class="moodle-banner-box">
+                    <div class="moodle-banner-content">
+                        <span class="banner-tag">Campus Virtual Martis</span>
+                        <h2>Simuladores Gratuitos en Nuestra Aula Virtual</h2>
+                        <p>¿Quieres medirte en condiciones reales? Regístrate en nuestra plataforma Moodle y accede a simuladores completos cronometrados de matemáticas, física, razonamientos y química de forma 100% gratuita.</p>
+                        <div class="moodle-cta-group">
+                            <a href="https://martisacademy.milaulas.com/" target="_blank" rel="noopener" class="btn btn-primary"><i data-lucide="laptop"></i> Ingresar al Aula Virtual</a>
+                            <a href="contacto.html" class="btn btn-outline btn-banner-secondary"><i data-lucide="help-circle"></i> Solicitar Credenciales</a>
+                        </div>
+                    </div>
+                    <div class="moodle-banner-visual">
+                        <i data-lucide="graduation-cap" class="moodle-huge-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS SECTION -->
+        <section class="testimonials-section" style="background-color: var(--bg-white);">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag color-orange">Casos de Éxito</span>
+                    <h2 class="section-title">Lo que dicen nuestros estudiantes</h2>
+                    <p class="section-subtitle">Cientos de estudiantes ya ingresaron a la carrera de sus sueños. ¡Tú eres el siguiente!</p>
+                </div>
+                
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <p style="font-style: italic; color: var(--text-muted); margin-bottom: 1.5rem;">
+                            "Gracias a los simuladores y el apoyo en cálculo y física de Martis Academy, logré entrar a la Escuela Politécnica Nacional. Las materias de primer semestre se me hicieron muy sencillas."
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 3rem; height: 3rem; background-color: var(--primary-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">KP</div>
+                            <div>
+                                <h4 style="font-size: 1rem;">Kevin Pazmiño</h4>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">Estudiante de Ing. Mecánica - EPN</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="course-card">
+                        <p style="font-style: italic; color: var(--text-muted); margin-bottom: 1.5rem;">
+                            "El preuniversitario es excelente. Saqué 980 en el examen de la Universidad Central. Los simuladores de Moodle me ayudaron a controlar los nervios y el tiempo del examen real."
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 3rem; height: 3rem; background-color: var(--primary-teal); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">MA</div>
+                            <div>
+                                <h4 style="font-size: 1rem;">María Andrade</h4>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">Estudiante de Medicina - UCE</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="course-card">
+                        <p style="font-style: italic; color: var(--text-muted); margin-bottom: 1.5rem;">
+                            "Nivelarme antes de entrar a la ESPOL fue la mejor decisión. Álgebra lineal y Cálculo I suelen dejar a muchos, pero con la base que me dio Martis Academy aprobé sin problemas."
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 3rem; height: 3rem; background-color: var(--primary-orange); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700;">JC</div>
+                            <div>
+                                <h4 style="font-size: 1rem;">Juan Castro</h4>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">Estudiante de Computación - ESPOL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            
+            <div class="footer-brand-col">
+                <a href="index.html" class="footer-logo">
+                    <img src="IMAGENES/logo.png" alt="Martis Academy Logo" class="footer-logo-img">
+                </a>
+                <p class="footer-about">
+                    Academia líder en pre-admisión universitaria y nivelación de carreras científicas y tecnológicas en Ecuador.
+                </p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Youtube"><i data-lucide="youtube"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="cursos.html">Nuestros Cursos</a></li>
+                    <li><a href="cronograma.html">Cronograma de Admisión</a></li>
+                    <li><a href="institutos.html">Institutos Públicos</a></li>
+                    <li><a href="simulador.html">Simulador Gratis</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Recursos Útiles</h4>
+                <ul>
+                    <li><a href="https://www.registrounicoedusup.gob.ec/" target="_blank" rel="noopener">Registro Único SENESCYT <i data-lucide="external-link" class="link-icon"></i></a></li>
+                    <!-- Enlace corregido para abrir galeria.html en nueva pestaña y no usar aprendeva -->
+                    <li><a href="galeria.html" target="_blank" rel="noopener">Cronograma de Admisión (Galería) <i data-lucide="external-link" class="link-icon"></i></a></li>
+                    <li><a href="https://www.ces.gob.ec/" target="_blank" rel="noopener">Oferta Académica CES <i data-lucide="external-link" class="link-icon"></i></a></li>
+                    <li><a href="contacto.html">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact-col">
+                <h4>Contacto Ecu</h4>
+                <p><i data-lucide="map-pin"></i> Av. Amazonas, Quito, Ecuador</p>
+                <p><i data-lucide="phone"></i> +593 98 765 4321</p>
+                <p><i data-lucide="mail"></i> info@martisacademy.com</p>
+            </div>
+
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container bottom-container">
+                <p>&copy; 2026 Martis Academy. Todos los derechos reservados. Diseñado con teoría de color y alta interactividad.</p>
+                <div class="bottom-links">
+                    <a href="index.html">Términos de Servicio</a>
+                    <a href="index.html">Políticas de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Code -->
+    <script src="app.js"></script>
+</body>
+</html>

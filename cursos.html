@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martis Academy - Nuestros Cursos</title>
+    
+    <!-- Meta SEO -->
+    <meta name="description" content="Detalles de cursos preuniversitarios y nivelación de carreras de Martis Academy. Matemáticas, física, química, y razonamientos para el ingreso y mejora en tu carrera.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- NAV BAR -->
+    <header class="main-header" id="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="IMAGENES/logo.png" alt="Martis Academy Logo" class="header-logo-img">
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="cursos.html" class="nav-link">Nuestros Cursos</a></li>
+                    <li><a href="cronograma.html" class="nav-link">Cronograma</a></li>
+                    <li><a href="institutos.html" class="nav-link">Institutos</a></li>
+                    <li><a href="simulador.html" class="nav-link">Simulador</a></li>
+                    <li><a href="planes.html" class="nav-link">Planes</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="contacto.html" class="btn btn-primary btn-header">Inscríbete Ya</a>
+                <a href="https://martisacademy.milaulas.com/" target="_blank" rel="noopener" class="btn btn-outline btn-header"><i data-lucide="external-link"></i> Aula Virtual</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menú">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top: 5rem;">
+        
+        <!-- COURSES SECTION -->
+        <section class="courses-section" id="cursos">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Programas Académicos</span>
+                    <h2 class="section-title">Elige tu Ruta hacia la Excelencia</h2>
+                    <p class="section-subtitle">Ofrecemos dos rutas especializadas diseñadas para llevarte al siguiente nivel educativo.</p>
+                </div>
+
+                <!-- Tabs Navigation -->
+                <div class="tabs-container">
+                    <div class="tabs-nav" role="tablist">
+                        <button class="tab-btn active" id="tab-preu" role="tab" aria-selected="true" aria-controls="panel-preu">
+                            <i data-lucide="graduation-cap"></i> Preparación de Ingreso (Preuniversitario)
+                        </button>
+                        <button class="tab-btn" id="tab-univ" role="tab" aria-selected="false" aria-controls="panel-univ">
+                            <i data-lucide="book-open"></i> Nivelación Universitaria (Carreras)
+                        </button>
+                    </div>
+
+                    <!-- Tab Panels -->
+                    <div class="tabs-content">
+                        <!-- Panel Preuniversitario -->
+                        <div class="tab-panel active" id="panel-preu" role="tabpanel" aria-labelledby="tab-preu">
+                            <div class="courses-grid">
+                                
+                                <!-- Card 1 -->
+                                <div class="course-card">
+                                    <div class="course-icon-wrapper color-blue">
+                                        <i data-lucide="binary"></i>
+                                    </div>
+                                    <h3>Razonamientos Clave</h3>
+                                    <p>Domina las bases lógicas exigidas en todas las pruebas nacionales e internas.</p>
+                                    <ul class="course-features">
+                                        <li><i data-lucide="check"></i> Razonamiento Numérico y Lógico</li>
+                                        <li><i data-lucide="check"></i> Razonamiento Verbal y Comprensión</li>
+                                        <li><i data-lucide="check"></i> Atención y Concentración</li>
+                                        <li><i data-lucide="check"></i> Simuladores semanales cronometrados</li>
+                                    </ul>
+                                    <div class="course-footer">
+                                        <span class="course-duration"><i data-lucide="clock"></i> 8 semanas</span>
+                                        <a href="contacto.html" class="btn btn-text">Saber más <i data-lucide="arrow-right"></i></a>
+                                    </div>
+                                </div>
+
+                                <!-- Card 2 -->
+                                <div class="course-card featured">
+                                    <div class="featured-badge">Más Demandado</div>
+                                    <div class="course-icon-wrapper color-teal">
+                                        <i data-lucide="atom"></i>
+                                    </div>
+                                    <h3>Ingenierías y Ciencias Exactas</h3>
+                                    <p>Preparación rigurosa para carreras técnicas con alto contenido matemático y científico.</p>
+                                    <ul class="course-features">
+                                        <li><i data-lucide="check"></i> Matemáticas Avanzadas</li>
+                                        <li><i data-lucide="check"></i> Física Mecánica y Ondas</li>
+                                        <li><i data-lucide="check"></i> Química General e Inorgánica</li>
+                                        <li><i data-lucide="check"></i> Preparación para EPN, ESPOL, UCE</li>
+                                    </ul>
+                                    <div class="course-footer">
+                                        <span class="course-duration"><i data-lucide="clock"></i> 12 semanas</span>
+                                        <a href="contacto.html" class="btn btn-primary btn-sm">Inscribirme</a>
+                                    </div>
+                                </div>
+
+                                <!-- Card 3 -->
+                                <div class="course-card">
+                                    <div class="course-icon-wrapper color-orange">
+                                        <i data-lucide="heart-pulse"></i>
+                                    </div>
+                                    <h3>Medicina y Ciencias de la Salud</h3>
+                                    <p>Asegura tu cupo en carreras sanitarias dominando el temario de alta complejidad.</p>
+                                    <ul class="course-features">
+                                        <li><i data-lucide="check"></i> Biología Celular y Humana</li>
+                                        <li><i data-lucide="check"></i> Química Orgánica y Bioquímica</li>
+                                        <li><i data-lucide="check"></i> Anatomía y Fisiología Básica</li>
+                                        <li><i data-lucide="check"></i> Técnicas de estudio memorísticas</li>
+                                    </ul>
+                                    <div class="course-footer">
+                                        <span class="course-duration"><i data-lucide="clock"></i> 12 semanas</span>
+                                        <a href="contacto.html" class="btn btn-text">Saber más <i data-lucide="arrow-right"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Panel Nivelación Universitaria -->
+                        <div class="tab-panel" id="panel-univ" role="tabpanel" aria-labelledby="tab-univ">
+                            <div class="courses-grid">
+                                
+                                <!-- Card 1 -->
+                                <div class="course-card">
+                                    <div class="course-icon-wrapper color-indigo">
+                                        <i data-lucide="calculator"></i>
+                                    </div>
+                                    <h3>Ciencias Matemáticas</h3>
+                                    <p>Supera las materias filtro de los primeros semestres de tu carrera.</p>
+                                    <ul class="course-features">
+                                        <li><i data-lucide="check"></i> Álgebra Lineal y Geometría</li>
+                                        <li><i data-lucide="check"></i> Cálculo Diferencial e Integral (I y II)</li>
+                                        <li><i data-lucide="check"></i> Cálculo Multivariable (III)</li>
+                                        <li><i data-lucide="check"></i> Ecuaciones Diferenciales</li>
+                                    </ul>
+                                    <div class="course-footer">
+                                        <span class="course-duration"><i data-lucide="clock"></i> Soporte Mensual</span>
+                                        <a href="contacto.html" class="btn btn-text">Saber más <i data-lucide="arrow-right"></i></a>
+                                    </div>
+                                </div>
+
+                                <!-- Card 2 -->
+                                <div class="course-card featured">
+                                    <div class="featured-badge">Apoyo Universitario</div>
+                                    <div class="course-icon-wrapper color-teal">
+                                        <i data-lucide="milestone"></i>
+                                    </div>
+                                    <h3>Física y Estructuras</h3>
+                                    <p>Domina el análisis físico y las leyes de la mecánica y el electromagnetismo.</p>
+                                    <ul class="course-features">
+                                        <li><i data-lucide="check"></i> Física Mecánica (Dinámica, Estática)</li>
+                                        <li><i data-lucide="check"></i> Física de Campos (Electromagnetismo)</li>
+                                        <li><i data-lucide="check"></i> Termodinámica y Mecánica de Fluidos</li>
+                                        <li><i data-lucide="check"></i> Resolución paso a paso de talleres</li>
+                                    </ul>
+                                    <div class="course-footer">
+                                        <span class="course-duration"><i data-lucide="clock"></i> Soporte Mensual</span>
+                                        <a href="contacto.html" class="btn btn-primary btn-sm">Inscribirme</a>
+                                    </div>
+                                </div>
+
+                                <!-- Card 3 -->
+                                <div class="course-card">
+                                    <div class="course-icon-wrapper color-orange">
+                                        <i data-lucide="flask-conical"></i>
+                                    </div>
+                                    <h3>Química Avanzada</h3>
+                                    <p>Ideal para estudiantes de Biotecnología, Ing. Química y Agronomía.</p>
+                                    <ul class="course-features">
+                                        <li><i data-lucide="check"></i> Estequiometría y Gases</li>
+                                        <li><i data-lucide="check"></i> Termoquímica y Cinética</li>
+                                        <li><i data-lucide="check"></i> Química Orgánica: Nomenclatura y Síntesis</li>
+                                        <li><i data-lucide="check"></i> Prácticas de laboratorio teóricas</li>
+                                    </ul>
+                                    <div class="course-footer">
+                                        <span class="course-duration"><i data-lucide="clock"></i> Soporte Mensual</span>
+                                        <a href="contacto.html" class="btn btn-text">Saber más <i data-lucide="arrow-right"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- METHODOLOGY BLOCK -->
+        <section class="methodology" style="background-color: var(--bg-white); padding: 5rem 0; border-top: 1px solid #f1f5f9;">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Metodología Martis</span>
+                    <h2 class="section-title">¿Cómo enseñamos?</h2>
+                    <p class="section-subtitle">Un método enfocado en la comprensión conceptual y la velocidad de resolución.</p>
+                </div>
+                
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-icon-wrapper color-blue"><i data-lucide="users"></i></div>
+                        <h3>Grupos Reducidos</h3>
+                        <p>Clases con pocos estudiantes para asegurar que los tutores respondan todas las dudas individuales en tiempo real.</p>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-icon-wrapper color-teal"><i data-lucide="file-check2"></i></div>
+                        <h3>Reactivos Reales</h3>
+                        <p>Resolvemos exámenes de admisiones pasadas y talleres oficiales de las principales cátedras universitarias.</p>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-icon-wrapper color-orange"><i data-lucide="trending-up"></i></div>
+                        <h3>Monitoreo Continuo</h3>
+                        <p>Reportes semanales de rendimiento en base a simuladores cronometrados para enfocar el esfuerzo de estudio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            
+            <div class="footer-brand-col">
+                <a href="index.html" class="footer-logo">
+                    <img src="IMAGENES/logo.png" alt="Martis Academy Logo" class="footer-logo-img">
+                </a>
+                <p class="footer-about">
+                    Academia líder en pre-admisión universitaria y nivelación de carreras científicas y tecnológicas en Ecuador.
+                </p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Youtube"><i data-lucide="youtube"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="cursos.html">Nuestros Cursos</a></li>
+                    <li><a href="cronograma.html">Cronograma de Admisión</a></li>
+                    <li><a href="institutos.html">Institutos Públicos</a></li>
+                    <li><a href="simulador.html">Simulador Gratis</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Recursos Útiles</h4>
+                <ul>
+                    <li><a href="https://www.registrounicoedusup.gob.ec/" target="_blank" rel="noopener">Registro Único SENESCYT <i data-lucide="external-link" class="link-icon"></i></a></li>
+                    <li><a href="galeria.html" target="_blank" rel="noopener">Cronograma de Admisión (Galería) <i data-lucide="external-link" class="link-icon"></i></a></li>
+                    <li><a href="https://www.ces.gob.ec/" target="_blank" rel="noopener">Oferta Académica CES <i data-lucide="external-link" class="link-icon"></i></a></li>
+                    <li><a href="contacto.html">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact-col">
+                <h4>Contacto Ecu</h4>
+                <p><i data-lucide="map-pin"></i> Av. Amazonas, Quito, Ecuador</p>
+                <p><i data-lucide="phone"></i> +593 98 765 4321</p>
+                <p><i data-lucide="mail"></i> info@martisacademy.com</p>
+            </div>
+
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container bottom-container">
+                <p>&copy; 2026 Martis Academy. Todos los derechos reservados. Diseñado con teoría de color y alta interactividad.</p>
+                <div class="bottom-links">
+                    <a href="index.html">Términos de Servicio</a>
+                    <a href="index.html">Políticas de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Code -->
+    <script src="app.js"></script>
+</body>
+</html>
